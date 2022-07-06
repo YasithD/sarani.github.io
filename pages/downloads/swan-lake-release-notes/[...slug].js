@@ -11,8 +11,11 @@ import { getHighlighter, setCDN } from "shiki";
 
 setCDN("https://unpkg.com/shiki/");
 
-import Layout from '../../../layouts/LayoutDocs';
+import Layout from '../../../layouts/LayoutOther';
 import { prefix } from '../../../utils/prefix';
+// import swanlake from '../../../_data/swanlake-latest/metadata.json';
+
+// import { Liquid } from 'liquidjs';
 
 
 var traverseFolder = function(dir) {
@@ -65,7 +68,15 @@ export async function getStaticProps({ params: { slug } }) {
   };
 }
 
+
+
 export default function PostPage({ frontmatter, content }) {
+
+  
+
+// engine
+//     .parseAndRender('{{version | capitalize}}', {version: 'alice'})
+//     .then(console.log);     // outputs 'Alice'
 
   const HighlightSyntax = (code,language) => {
     const [codeSnippet, setCodeSnippet] = React.useState([]);
@@ -74,7 +85,7 @@ export default function PostPage({ frontmatter, content }) {
         async function fetchData() {
             getHighlighter({
               theme: "nord",
-              langs: ['bash', 'ballerina', 'toml', 'yaml', 'sh', 'json', 'graphql', 'sql']
+              langs: ['bash', 'ballerina', 'toml', 'yaml', 'sh', 'json', 'graphql', 'sql', 'java']
             }).then((highlighter) => {
               setCodeSnippet(highlighter.codeToHtml(code,language));
             })
@@ -83,6 +94,7 @@ export default function PostPage({ frontmatter, content }) {
     }, [code,language]);
     return [codeSnippet]
   }
+
 
   return (
     <>
@@ -107,7 +119,7 @@ export default function PostPage({ frontmatter, content }) {
         <meta property="twitter:text:description" content="A programming language for the cloud that makes it easier to use, combine, and create network services."/>
     </Head>
     <Layout>
-      <Col sm={7} xxl={8} className='mdContent'>
+      <Col xs={12} sm={10} className='mdContent'>
         <Container>
           <div className='topRow'>
             <Col xs={11}><h1>{frontmatter.title}</h1></Col>
@@ -115,7 +127,7 @@ export default function PostPage({ frontmatter, content }) {
               <Image src={`${prefix}/images/github.svg`} height={20} width={20} alt="Edit in github"/>
             </Col>
           </div>
-          
+
           <ReactMarkdown 
             components={{
               code({node, inline, className, children, ...props}) {
