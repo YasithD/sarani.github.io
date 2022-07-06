@@ -1,33 +1,42 @@
-import Head from 'next/head';
-import dynamic from 'next/dynamic';
-import { Container, Row, Stack, Col} from 'react-bootstrap';
+import Head from "next/head";
+import dynamic from "next/dynamic";
+import { Row, Stack } from "react-bootstrap";
 
-import Footer from '../components/common/footer/Footer';
+import Footer from "../components/common/footer/Footer";
 
 export default function Layout({ children }) {
-
-  const TopNav = dynamic(() => import('../components/common/top-nav/TopNav'), { ssr: false });
+  const TopNav = dynamic(() => import("../components/common/top-nav/TopNav"), {
+    ssr: false,
+  });
 
   return (
     <>
       <Head>
         {/* Google analytics */}
-        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"/>
-        <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PSL2TX4"/>
-        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-92163714-2"/>
+        <script
+          type="text/javascript"
+          async=""
+          src="https://www.google-analytics.com/analytics.js"
+        />
+        <script
+          async=""
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-PSL2TX4"
+        />
+        <script
+          async=""
+          src="https://www.googletagmanager.com/gtag/js?id=UA-92163714-2"
+        />
 
         {/* <script async src="/jquery/jquery.min.js"/> */}
         {/* <script async src="/jquery/jquery.min.js"/>
         <script async src="/shiki/shiki.js" /> */}
 
-<meta name="viewport" content="width=500, initial-scale=1"/>
-
-        
+        <meta name="viewport" content="width=500, initial-scale=1" />
       </Head>
-      <Stack gap={0} className='main-wrapper'>
-        <TopNav launcher='docs'/>
-        <div className='wrap-page-content'>
-          <Row className='contentRow'>
+      <Stack gap={0} className="main-wrapper">
+        <TopNav launcher="docs" />
+        <div className="wrap-page-content">
+          <Row className="contentRow">
             {/* <Col sm={3} xxl={2} className='leftNav d-none d-sm-block'>
               <LeftNav/>
             </Col>
@@ -36,8 +45,7 @@ export default function Layout({ children }) {
           </Row>
         </div>
 
-        <Footer/>
-
+        <Footer />
       </Stack>
     </>
   );

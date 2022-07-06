@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif !important;
@@ -31,7 +32,7 @@ a {
   top: 4rem;
   height: calc(100vh - 4rem);
   overflow-y: auto;
- 
+
   padding-right: 0 !important;
   padding-left: 0 !important;
   font-size: 13px;
@@ -44,7 +45,7 @@ a {
 }
 
 .leftNav::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 
@@ -67,14 +68,16 @@ a {
   text-align: right;
 }
 
-.mdContent h1, .policyContent h1 {
+.mdContent h1,
+.policyContent h1 {
   /* font-size: 38px; */
   color: #585a5e;
   /* font-weight: 600; */
   /* margin-bottom: 30px; */
 }
 
-.mdContent h2, .policyContent h2 {
+.mdContent h2,
+.policyContent h2 {
   /* font-size: 32px; */
   margin-top: 40px;
   /* margin-bottom: 30px;
@@ -87,11 +90,14 @@ a {
   /* text-transform: uppercase; */
 }
 
-.mdContent h3, .policyContent h3 {
+.mdContent h3,
+.policyContent h3 {
   margin-top: 40px;
 }
 
-.mdContent p, .mdContent li, .policyContent p {
+.mdContent p,
+.mdContent li,
+.policyContent p {
   font-size: 16px;
   color: #57595d;
   line-height: 24px;
@@ -101,16 +107,19 @@ a {
   letter-spacing: 0.4px;
 }
 
-.mdContent a:hover, .policyContent a:hover {
+.mdContent a:hover,
+.policyContent a:hover {
   color: #464646 !important;
 }
 
-.mdContent a, .policyContent a {
+.mdContent a,
+.policyContent a {
   color: #20b6b0 !important;
-  text-decoration: none
+  text-decoration: none;
 }
 
-.mdContent ol + blockquote, .policyContent blockquote {
+.mdContent ol + blockquote,
+.policyContent blockquote {
   padding: 10px 20px;
   margin: -10px 0 20px 30px !important;
   font-size: 17.5px;
@@ -125,7 +134,8 @@ a {
   color: inherit;
 }
 
-b, strong {
+b,
+strong {
   font-weight: 700 !important;
 }
 
@@ -146,7 +156,8 @@ pre.shiki {
   border-top: 1px solid #eeeeee;
 }
 
-.prevLink, .nextLink {
+.prevLink,
+.nextLink {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -156,11 +167,13 @@ pre.shiki {
   justify-content: end;
 }
 
-.prevLink a, .nextLink a {
+.prevLink a,
+.nextLink a {
   color: #20b6b0;
 }
 
-.prevLink:hover, .nextLink:hover {
+.prevLink:hover,
+.nextLink:hover {
   color: #57595d;
   fill: #57595d;
 }
@@ -235,14 +248,6 @@ pre.shiki {
   margin-right: 0 !important;
 }
 
-
-
-
-
-
-
-
-
 ul.cInlinelinklist {
   margin: 20px 0 0 0;
   padding: 0;
@@ -268,11 +273,6 @@ a.cGreenLinkArrow:hover {
   color: #000 !important;
 }
 
-
-
-
-
-
 .pageContentRow {
   margin-bottom: 20px;
 }
@@ -295,7 +295,8 @@ a.cGreenLinkArrow:hover {
   border: 1px solid #f5f5f5;
 }
 
-.downloads :not(pre) > code[class*="language-"], pre[class*="language-"] {
+.downloads :not(pre) > code[class*="language-"],
+pre[class*="language-"] {
   background: #f5f5f5 !important;
 }
 
@@ -304,16 +305,15 @@ a.cGreenLinkArrow:hover {
   justify-content: space-between;
 }
 
-.dVersion:not(:last-child) { 
+.dVersion:not(:last-child) {
   margin-right: 1px;
 }
-
 
 .dVersion {
   width: 50%;
 }
 
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
   .dVersion {
     width: 100%;
   }
@@ -371,14 +371,19 @@ ul.cDiwnloadSubLinks li:first-child {
   margin-right: 0;
 }
 
-ul.cDiwnloadSubLinks li a, .donwloadInstructions a,
-.downloadsContent a, .cReleaseNotes a, .downloadsVSCode a  {
+ul.cDiwnloadSubLinks li a,
+.donwloadInstructions a,
+.downloadsContent a,
+.cReleaseNotes a,
+.downloadsVSCode a {
   color: #20b6b0;
   text-decoration: none;
 }
 
-.cReleaseNotes a:hover, .cDiwnloadSubLinks a:hover, 
-.donwloadInstructions a:hover, .downloadsContent a:hover,
+.cReleaseNotes a:hover,
+.cDiwnloadSubLinks a:hover,
+.donwloadInstructions a:hover,
+.downloadsContent a:hover,
 .downloadsVSCode a:hover {
   color: #57595d;
 }
@@ -386,8 +391,6 @@ ul.cDiwnloadSubLinks li a, .donwloadInstructions a,
 .downloadsContent {
   margin-top: 20px;
 }
-
-
 
 /* special Tabs */
 .downloads-tabs .nav-tabs {
@@ -400,7 +403,7 @@ ul.cDiwnloadSubLinks li a, .donwloadInstructions a,
   cursor: default;
 }
 
-.downloads-tabs .nav-tabs .nav-link:focus, 
+.downloads-tabs .nav-tabs .nav-link:focus,
 .downloads-tabs .nav-tabs .nav-link:hover {
   color: #555 !important;
   border-color: #ffffff !important;
@@ -423,7 +426,8 @@ a.cDownload .cSize {
   margin-top: -4px;
 }
 
-.cArchived a, .cArchived a:hover,
+.cArchived a,
+.cArchived a:hover,
 .cArchived a:focus {
   font-size: 16px;
   font-weight: 300;
@@ -467,14 +471,20 @@ a.cDownload .cSize {
   background-image: url("/images/download-bg-white.svg");
 } */
 
-.cWindows, .cLinux, .cMac, .cVSCode {
+.cWindows,
+.cLinux,
+.cMac,
+.cVSCode {
   background-repeat: no-repeat;
   padding-left: 40px;
   line-height: 32px;
   background-size: 30px;
 }
 
-p.cWindows, p.cLinux, p.cMac, p.cVSCode {
+p.cWindows,
+p.cLinux,
+p.cMac,
+p.cVSCode {
   line-height: 32px;
 }
 
@@ -504,9 +514,6 @@ p.cWindows, p.cLinux, p.cMac, p.cVSCode {
   height: 50px;
 }
 
-
-
-
 /* .mdContent .toc {
   position: fixed;
   right: 0;
@@ -514,6 +521,88 @@ p.cWindows, p.cLinux, p.cMac, p.cVSCode {
   overflow: scroll;
 } */
 .container-fluid {
-  padding-right: var(--bs-gutter-x,2.25rem) !important;
-  padding-left: var(--bs-gutter-x,2.25rem) !important;
+  padding-right: var(--bs-gutter-x, 2.25rem) !important;
+  padding-left: var(--bs-gutter-x, 2.25rem) !important;
+}
+
+/* BBE Related */
+:root {
+  --shiki-color-text: #eeeeee;
+  --shiki-color-background: #263238;
+  --shiki-token-constant: #3ad1ca;
+  --shiki-token-string: #8ff06e;
+  --shiki-token-comment: #9fbfc9;
+  --shiki-token-keyword: #3ad1ca;
+  --shiki-token-parameter: #8ff06e;
+  --shiki-token-function: #eeeeee;
+  --shiki-token-string-expression: #8ff06e;
+  --shiki-token-punctuation: #eeeeee;
+  --shiki-token-link: #8ff06e;
+
+  --code-color-background: #eeeeee;
+  --output-color-background: #585a5e;
+
+  --output-color-text: #3ad1ca;
+  --button-color-text: #3ad1ca;
+  --code-color-output: #818181;
+  --button-hover-color-text: #a8dbd9;
+}
+
+.bbeCode {
+  background-color: var(--code-color-background);
+}
+
+.bbeOutput {
+  background-color: var(--output-color-background);
+}
+
+.bbeOutput span {
+  color: var(--output-color-text);
+}
+
+.bbeOutput code code {
+  background: var(--code-color-output);
+}
+
+.btnContainer {
+  width: fit-content;
+}
+
+.btnNext {
+  text-align: end;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btnPrev {
+  text-align: start;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btnTitle {
+  font-size: 1.3rem;
+  color: var(--button-color-text);
+  cursor: pointer;
+}
+
+.btnTitleHover {
+  font-size: 1.3rem;
+  text-decoration: underline;
+  color: var(--button-hover-color-text);
+  cursor: pointer;
+}
+
+.btnArrow {
+  cursor: pointer;
+}
+
+.btnArrowHover {
+  cursor: pointer;
+  fill: var(--button-hover-color-text);
+}
+
+.shiki {
+  margin: 0 !important;
+  background-color: var(--code-color-background) !important;
 }
