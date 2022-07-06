@@ -12,6 +12,10 @@
     letter-spacing: 0.4px;
 }
 
+.upcoming {
+    color: #585a5e;
+}
+
 .eventRows h3 {
     padding-bottom: 20px;
 }
@@ -48,7 +52,7 @@
 
 a.eventRegistration {
     display: block;
-    margin: 0 15px;
+    margin: 0;
     transition: none !important;
     font-size: 16px;
     text-align: center;
@@ -76,5 +80,11 @@ a.eventRegistration:hover {
 
     .eventURL {
         margin-top: 0px;
+    }
+}
+
+@media (min-width: 992px) { 
+    a.eventRegistration {
+        margin: 0 15px;
     }
 }
